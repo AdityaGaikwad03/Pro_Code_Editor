@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pro Code Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🧑‍💻 Mini Code Editor</h1>
+  </header>
+
+  <main class="editor-wrapper">
+    <section class="panel">
+      <label for="html">HTML</label>
+      <textarea id="html" spellcheck="false"></textarea>
+    </section>
+    <section class="panel">
+      <label for="css">CSS</label>
+      <textarea id="css" spellcheck="false"></textarea>
+    </section>
+    <section class="panel">
+      <label for="js">JS</label>
+      <textarea id="js" spellcheck="false"></textarea>
+    </section>
+  </main>
+
+  <div class="run-container">
+    <button id="run">▶ Run Code</button>
+  </div>
+
+  <iframe id="output"></iframe>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jsbinjquery.js"></script>
+  <script src="jquery-3.7.1.min.js"></script>
+</body>
+</html>

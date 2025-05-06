@@ -1,0 +1,96 @@
+:root {
+    --background: #f9f9f9;
+    --panel-bg: #1e1e2f;
+    --text-color: #ffffff;
+    --border: #ccc;
+    --button-bg: #4CAF50;
+    --button-hover: #45a049;
+    --font: 'Fira Code', monospace;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--background);
+    font-family: var(--font), monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .editor-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .panel label {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    height: 200px;
+    background-color: var(--panel-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    resize: vertical;
+    font-size: 14px;
+    font-family: var(--font);
+    outline: none;
+  }
+  
+  .run-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  button#run {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button#run:hover {
+    background-color: var(--button-hover);
+  }
+  
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: white;
+  }
+  
